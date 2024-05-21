@@ -1,0 +1,44 @@
+1)
+print("""“Don't compare yourself with anyone in this world…
+if you do so, you are insulting yourself.”
+                                            Bill Gates""")
+
+
+2)
+x = int(input())
+y = int(input())
+print(*[i for i in range(x, y + 1) if i % 2 == 0])
+
+
+3)
+x = input("Введите число: ") 
+if x == x[::-1]: 
+    print("Число является палиндромом") 
+else: 
+    print("Число не является палиндромом")
+
+
+4)
+def digit_number(x):
+    y = 0
+    for i in range(len(str(x))):
+        y += 1
+    return y
+ 
+ 
+print('Количество цифр в числе 6847 = ', digit_number(6847))
+
+
+5)
+def proizv(x, y):
+    if x == y:
+        return "Positive."
+    if x > y:
+        x, y = y, x
+    z = 1
+    for i in range(x, y + 1):
+        z *= i
+    return z
+ 
+ 
+print('Произведение чисел от 15 до 26 = ', proizv(15, 26))
